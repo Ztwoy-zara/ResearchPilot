@@ -1,0 +1,1 @@
+"""ResearchPilot Lite agent package."""

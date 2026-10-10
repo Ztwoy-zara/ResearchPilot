@@ -1,0 +1,24 @@
+# API keys and environment variables
+.env
+
+# Virtual environments
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local runtime files
+.langgraph_api/
+*.egg-info/
+.ipynb_checkpoints/
+
+# IDE and system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

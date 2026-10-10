@@ -1,0 +1,102 @@
+[
+  {
+    "id": "state_management",
+    "query": "LangGraph支持状态管理吗？一句话回答，附1个官方URL。",
+    "expected_terms": ["状态"],
+    "expected_domains": [
+      "docs.langchain.com",
+      "reference.langchain.com",
+      "langchain-ai.github.io"
+    ]
+  },
+  {
+    "id": "checkpointing",
+    "query": "LangGraph支持检查点吗？一句话回答，附1个官方URL。",
+    "expected_terms": ["检查点", "checkpoint"],
+    "expected_domains": [
+      "docs.langchain.com",
+      "reference.langchain.com",
+      "langchain-ai.github.io"
+    ]
+  },
+  {
+    "id": "conditional_edges",
+    "query": "LangGraph支持条件边吗？一句话回答，附1个官方URL。",
+    "expected_terms": ["条件边", "conditional"],
+    "expected_domains": [
+      "docs.langchain.com",
+      "reference.langchain.com",
+      "langchain-ai.github.io"
+    ]
+  },
+  {
+    "id": "human_in_the_loop",
+    "query": "LangGraph支持人工介入吗？一句话回答，附1个官方URL。",
+    "expected_terms": ["人工", "human"],
+    "expected_domains": [
+      "docs.langchain.com",
+      "reference.langchain.com",
+      "langchain-ai.github.io"
+    ]
+  },
+  {
+    "id": "streaming",
+    "query": "LangGraph支持流式输出吗？一句话回答，附1个官方URL。",
+    "expected_terms": ["流式", "stream"],
+    "expected_domains": [
+      "docs.langchain.com",
+      "reference.langchain.com",
+      "langchain-ai.github.io"
+    ]
+  },
+  {
+    "id": "persistence",
+    "query": "LangGraph支持持久化吗？一句话回答，附1个官方URL。",
+    "expected_terms": ["持久化", "persistence"],
+    "expected_domains": [
+      "docs.langchain.com",
+      "reference.langchain.com",
+      "langchain-ai.github.io"
+    ]
+  },
+  {
+    "id": "subgraphs",
+    "query": "LangGraph支持子图吗？一句话回答，附1个官方URL。",
+    "expected_terms": ["子图", "subgraph"],
+    "expected_domains": [
+      "docs.langchain.com",
+      "reference.langchain.com",
+      "langchain-ai.github.io"
+    ]
+  },
+  {
+    "id": "durable_execution",
+    "query": "LangGraph支持持久执行吗？一句话回答，附1个官方URL。",
+    "expected_terms": ["持久执行", "durable"],
+    "expected_domains": [
+      "docs.langchain.com",
+      "reference.langchain.com",
+      "langchain-ai.github.io"
+    ]
+  },
+  {
+    "id": "interrupts",
+    "query": "LangGraph支持中断恢复吗？一句话回答，附1个官方URL。",
+    "expected_terms": ["中断", "interrupt"],
+    "expected_domains": [
+      "docs.langchain.com",
+      "reference.langchain.com",
+      "langchain-ai.github.io"
+    ]
+  },
+  {
+    "id": "memory",
+    "query": "LangGraph支持工作流记忆吗？一句话回答，附1个官方URL。",
+    "expected_terms": ["记忆", "memory"],
+    "expected_domains": [
+      "docs.langchain.com",
+      "reference.langchain.com",
+      "langchain-ai.github.io"
+    ]
+  }
+]

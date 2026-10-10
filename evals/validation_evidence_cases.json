@@ -1,0 +1,29 @@
+[
+  {
+    "id": "checkpointer_memory",
+    "query": "LangGraph 如何保存会话状态？",
+    "claim": "Checkpointer 将线程的图状态保存为检查点，用于短期记忆。",
+    "source_url": "https://docs.langchain.com/oss/python/langgraph/persistence",
+    "page_text": "Checkpointers persist a thread’s graph state as checkpoints. Use them for short-term, thread-scoped memory, including conversation continuity, human-in-the-loop workflows, time travel, and fault tolerance.\n\nStores persist application-defined data outside the graph state. Use them for long-term, cross-thread memory, including user preferences, facts, and shared knowledge.",
+    "gold_evidence": "Checkpointers persist a thread’s graph state as checkpoints.",
+    "supported": true
+  },
+  {
+    "id": "stream_full_state",
+    "query": "LangGraph 如何在流式输出中获取每一步的完整状态？",
+    "claim": "values 模式返回图在每一步执行后的完整状态。",
+    "source_url": "https://docs.langchain.com/oss/python/langgraph/streaming#graph-state",
+    "page_text": "updates streams the updates to the state after each step of the graph. Use this to stream only the state updates returned by the nodes after each step. The streamed outputs include the name of the node as well as the update.\n\nvalues streams the full value of the state after each step of the graph. Use this to stream the full state of the graph after each step.",
+    "gold_evidence": "values streams the full value of the state after each step of the graph.",
+    "supported": true
+  } ,
+  {
+    "id": "interrupt_resume",
+    "query": "LangGraph 暂停后如何恢复执行？",
+    "claim": "中断后可以通过重新调用图并使用 Command 恢复执行。",
+    "source_url": "https://docs.langchain.com/oss/python/langgraph/interrupts",
+    "page_text": "Interrupts allow you to pause graph execution at specific points and wait for external input before continuing. This enables human-in-the-loop patterns where you need external input to proceed. When an interrupt is triggered, LangGraph saves the graph state using its persistence layer and waits indefinitely until you resume execution.\n\nInterrupts work by calling the interrupt() function at any point in your graph nodes. The function accepts any JSON-serializable value which is surfaced to the caller. When you’re ready to continue, you resume execution by re-invoking the graph using Command, which then becomes the return value of the interrupt() call from inside the node.\n\nUnlike static breakpoints (which pause before or after specific nodes), interrupts are dynamic: they can be placed anywhere in your code and can be conditional based on your application logic.",
+    "gold_evidence": "When you’re ready to continue, you resume execution by re-invoking the graph using Command",
+    "supported": true
+  }
+]

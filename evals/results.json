@@ -1,0 +1,106 @@
+{
+  "summary": {
+    "total_cases": 5,
+    "success_rate": 1.0,
+    "citation_validity_rate": 1.0,
+    "keyword_match_rate": 1.0,
+    "average_score": 8.8,
+    "average_revisions": 0.0,
+    "average_latency_seconds": 4.696,
+    "total_input_tokens": 14053,
+    "total_output_tokens": 1070,
+    "total_tokens": 15123,
+    "average_input_tokens": 2810.6,
+    "average_output_tokens": 214.0,
+    "average_total_tokens": 3024.6,
+    "total_estimated_cost_usd": 0.00274995,
+    "average_estimated_cost_usd": 0.00054999
+  },
+  "records": [
+    {
+      "id": "state_management",
+      "query": "LangGraph支持状态管理吗？一句话回答，附1个官方URL。",
+      "elapsed_seconds": 4.652,
+      "input_tokens": 2615,
+      "output_tokens": 199,
+      "total_tokens": 2814,
+      "estimated_cost_usd": 0.00051165,
+      "metrics": {
+        "success": true,
+        "citation_valid": true,
+        "keyword_matched": true,
+        "score": 9,
+        "revision_count": 0
+      },
+      "final_report": "是的，LangGraph 支持状态管理，通过 StateGraph、节点/边以及 checkpointer 等机制来管理和持久化工作流状态。  \nhttps://docs.langchain.com/oss/python/langgraph/graph-api"
+    },
+    {
+      "id": "checkpointing",
+      "query": "LangGraph支持检查点吗？一句话回答，附1个官方URL。",
+      "elapsed_seconds": 3.974,
+      "input_tokens": 1588,
+      "output_tokens": 201,
+      "total_tokens": 1789,
+      "estimated_cost_usd": 0.0003588,
+      "metrics": {
+        "success": true,
+        "citation_valid": true,
+        "keyword_matched": true,
+        "score": 9,
+        "revision_count": 0
+      },
+      "final_report": "是的，LangGraph 支持检查点（Checkpointing），可通过 checkpoint saver 持久化图状态，实现 human-in-the-loop、跨交互记忆和持久执行等功能。  \nhttps://reference.langchain.com/python/langgraph/checkpoints"
+    },
+    {
+      "id": "conditional_edges",
+      "query": "LangGraph支持条件边吗？一句话回答，附1个官方URL。",
+      "elapsed_seconds": 7.288,
+      "input_tokens": 4333,
+      "output_tokens": 300,
+      "total_tokens": 4633,
+      "estimated_cost_usd": 0.00082995,
+      "metrics": {
+        "success": true,
+        "citation_valid": true,
+        "keyword_matched": true,
+        "score": 8,
+        "revision_count": 0
+      },
+      "final_report": "是的，LangGraph 支持条件边（conditional edges），可根据状态动态决定下一步走向。官方文档：https://langchain-ai.github.io/langgraph/how-tos/branching/"
+    },
+    {
+      "id": "human_in_the_loop",
+      "query": "LangGraph支持人工介入吗？一句话回答，附1个官方URL。",
+      "elapsed_seconds": 3.805,
+      "input_tokens": 2404,
+      "output_tokens": 164,
+      "total_tokens": 2568,
+      "estimated_cost_usd": 0.000459,
+      "metrics": {
+        "success": true,
+        "citation_valid": true,
+        "keyword_matched": true,
+        "score": 9,
+        "revision_count": 0
+      },
+      "final_report": "是的，LangGraph支持人工介入（human-in-the-loop），可在任意节点检查并修改智能体状态。  \nhttps://docs.langchain.com/oss/python/langgraph/overview"
+    },
+    {
+      "id": "streaming",
+      "query": "LangGraph支持流式输出吗？一句话回答，附1个官方URL。",
+      "elapsed_seconds": 3.76,
+      "input_tokens": 3113,
+      "output_tokens": 206,
+      "total_tokens": 3319,
+      "estimated_cost_usd": 0.00059055,
+      "metrics": {
+        "success": true,
+        "citation_valid": true,
+        "keyword_matched": true,
+        "score": 9,
+        "revision_count": 0
+      },
+      "final_report": "是的，LangGraph支持流式输出，官方文档提供了多种流式模式（如 values、updates、custom 等）用于实时返回节点数据状态。  \n官方URL: https://docs.langchain.com/oss/javascript/langgraph/streaming"
+    }
+  ]
+}
